@@ -4,9 +4,9 @@
 - [web3.0](#web30)
 
 # webserver的本质
+
+![图片](./img/01-1.png)
 webserver的本质，实际上就是接收，解析http请求传输的文本字符，理解这些文本字符的指令，然后进行计算，再将返回值组织成hhtp响应的文本字符，通过网络传输过去。
-
-
 
 # 一定要使用标准库吗
 
@@ -27,10 +27,7 @@ http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
 
 // 监听8080端口
 log.Fatal(http.ListenAndServe(":8080", nil))
-
-
-
-
+```
 
 
 
